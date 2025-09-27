@@ -1,0 +1,165 @@
+import type { MenuCategory, FilterCategory } from './types';
+
+export const filterCategories: FilterCategory[] = [
+  { id: 'all', name: 'All' },
+  { id: 'breakfast', name: 'Breakfast' },
+  { id: 'starters', name: 'Starters' },
+  { id: 'rice', name: 'Rice' },
+  { id: 'dal', name: 'Dal' },
+  { id: 'curry', name: 'Indian Curry' },
+  { id: 'mix', name: 'Mix Items' },
+  { id: 'breads', name: 'Breads' },
+  { id: 'pizzas', name: 'Pizzas' },
+  { id: 'thali', name: 'Thali' },
+  { id: 'dakshin', name: 'Dakshin' },
+  { id: 'burgers', name: 'Burgers' },
+  { id: 'shakes', name: 'Shakes' },
+];
+
+export const menuData: MenuCategory[] = [
+  {
+    id: 'breakfast',
+    title: 'Breakfast & Quick Bites',
+    items: [
+      { id: 'breakfast-poha', name: 'Poha', price: '50/-' },
+      { id: 'breakfast-upma', name: 'Upma', price: '60/-' },
+      { id: 'breakfast-paratha-combo', name: '2 Paratha with Sabji Combo', price: '65/-' },
+      { id: 'breakfast-veg-sandwich', name: 'Veg. Grill Sandwich', price: '50/-' },
+      { id: 'breakfast-cheese-sandwich', name: 'Veg. Grill Cheese Sandwich', price: '60/-' },
+      { id: 'breakfast-paneer-sandwich', name: 'Veg. Grill Paneer Sandwich', price: '75/-' },
+      { id: 'breakfast-dhokla', name: 'Dhokla (5 pcs)', price: '70/-' },
+      { id: 'breakfast-onion-uttapam', name: 'Onion Uttapam', price: '40/-' },
+      { id: 'breakfast-mix-uttapam', name: 'Mix Uttapam', price: '60/-' },
+    ],
+  },
+  {
+    id: 'starters',
+    title: 'Starters',
+    items: [
+      { id: 'starters-cheese-balls', name: 'Cheese balls', price: '60/-' },
+      { id: 'starters-mix-veg-pakoda', name: 'Mix Veg Pakoda', price: '99/-' },
+      { id: 'starters-crispy-chat', name: 'Crispy Chat', price: '50/-' },
+      { id: 'starters-momo', name: 'Momo', price: '50/-' },
+      { id: 'starters-paw-bhajji', name: 'Paw Bhajji', price: '60/-' },
+      { id: 'starters-chips-chaat', name: 'Lays & other chips chaat', price: '60/-' },
+      { id: 'starters-samosa-chaat', name: 'Samosa Chaat', price: '40/-' },
+      { id: 'starters-veg-pakoda', name: 'Veg Pakoda', price: '100/-' },
+    ],
+  },
+  {
+    id: 'rice',
+    title: 'Rice',
+    items: [
+      { id: 'rice-steam', name: 'Steam Rice', price: '75/-' },
+      { id: 'rice-veg-pulao', name: 'Veg Pulao', price: '100/-' },
+      { id: 'rice-curd-fried', name: 'Curd Fried Rice', price: '90/-' },
+      { id: 'rice-lemon', name: 'Lemon Rice', price: '80/-' },
+      { id: 'rice-south-pulao', name: 'South Style Pulao', price: '200/-' },
+      { id: 'rice-jeera', name: 'Jeera Rice', price: '150/-' },
+      { id: 'rice-matar-pulao', name: 'Matar Pulao', price: '170/-' },
+    ],
+  },
+  {
+    id: 'dal',
+    title: 'Dal',
+    items: [
+      { id: 'dal-plain', name: 'Plain Dal', price: '70/-' },
+      { id: 'dal-tadka', name: 'Dal Tadka', price: '150/-' },
+      { id: 'dal-fry', name: 'Dal Fry', price: '120/-' },
+    ],
+  },
+  {
+    id: 'curry',
+    title: 'Indian Curry',
+    items: [
+        { id: 'curry-alu-matar', name: 'Alu Matar', price: '110/-' },
+        { id: 'curry-alu-jeera', name: 'Alu Jeera', price: '60/-' },
+        { id: 'curry-dry-aloo', name: 'Dry Aloo', price: '85/-' },
+        { id: 'curry-gatte-ki-sabji', name: 'Gatte Ki Sabji', price: '160/-' },
+        { id: 'curry-paneer-masala', name: 'Paneer Masala', price: '200/-' },
+        { id: 'curry-banana-sabji', name: 'Banana Sabji', price: '90/-' },
+        { id: 'curry-malai-onion', name: 'Malai Onion Special Sabji', price: '300/-' },
+        { id: 'curry-matar-masala', name: 'Matar Masala', price: '150/-' },
+        { id: 'curry-matar-paneer', name: 'Matar Paneer', price: '190/-' },
+        { id: 'curry-alu-dum', name: 'Alu Dum', price: '150/-' },
+        { id: 'curry-alu-sabji', name: 'Alu Sabji (normal)', price: '90/-' },
+        { id: 'curry-tomato-sabji', name: 'Tomato Sabji', price: '50/-' },
+    ]
+  },
+  {
+    id: 'mix',
+    title: 'Mix Items & Rolls',
+    items: [
+      { id: 'mix-chowmin', name: 'Chowmin', price: '50/-' },
+      { id: 'mix-plain-maggie', name: 'Plain Maggie', price: '40/-' },
+      { id: 'mix-veg-maggie', name: 'Veg Maggie', price: '60/-' },
+      { id: 'mix-french-fries', name: 'French Fries', price: '110/-' },
+      { id: 'mix-veg-roll', name: 'Veg Roll', price: '30/-' },
+      { id: 'mix-cheese-roll', name: 'Veg Cheese Roll', price: '70/-' },
+      { id: 'mix-paneer-roll', name: 'Veg Paneer Cheese Roll', price: '80/-' },
+    ],
+  },
+  {
+    id: 'breads',
+    title: 'Indian Breads & Naan',
+    items: [
+      { id: 'breads-tawa-roti', name: 'Tawa Roti', price: '10/-' },
+      { id: 'breads-butter-roti', name: 'Butter Tawa Roti', price: '15/-' },
+      { id: 'breads-plain-chapati', name: 'Plain Chapati', price: '20/-' },
+      { id: 'breads-onion-chapati', name: 'Onion Masala Chapati', price: '40/-' },
+      { id: 'breads-tandoori-naan', name: 'Tandoori Naan', price: '30/-' },
+      { id: 'breads-garlic-naan', name: 'Garlic Tandoori Naan', price: '45/-' },
+      { id: 'breads-rice-roti', name: 'Rice Roti', price: '40/-' },
+      { id: 'breads-alu-paratha', name: 'Alu Paratha (2 pcs)', price: '80/-' },
+    ],
+  },
+  {
+    id: 'pizzas',
+    title: 'Pizzas & Sides',
+    items: [
+      { id: 'pizzas-onion', name: 'Onion Pizza', price: '65/-' },
+      { id: 'pizzas-capsicum', name: 'Capsicum Pizza', price: '70/-' },
+      { id: 'pizzas-corn', name: 'Corn Pizza', price: '95/-' },
+      { id: 'pizzas-loaded', name: 'Loaded Pizza', price: '120/-' },
+    ],
+  },
+  {
+    id: 'thali',
+    title: 'Thali & Combos',
+    items: [
+      { id: 'thali-veg', name: 'Veg Thali (Dal Makhani, Jeera Rice, 4 Butter Tawa Roti, 2 Veg, Papad, Pickle)', price: '150/-' },
+      { id: 'thali-roti-combo', name: 'Butter Tawa Roti (4 pcs) with 1 Veg Combo', price: '90/-' },
+      { id: 'thali-roti', name: 'Roti Thali (4 Butter Roti, 2 Veg, Papad, Pickle)', price: '120/-' },
+    ],
+  },
+  {
+    id: 'dakshin',
+    title: 'Dakshin Specials',
+    items: [
+      { id: 'dakshin-rava-dosa', name: 'Rava Dosa', price: '60/-' },
+      { id: 'dakshin-rava-onion-dosa', name: 'Rava Onion Dosa', price: '70/-' },
+      { id: 'dakshin-plain-dosa', name: 'Plain Dosa', price: '50/-' },
+      { id: 'dakshin-masala-dosa', name: 'Masala Dosa', price: '99/-' },
+      { id: 'dakshin-cheese-masala-dosa', name: 'Cheese Masala Dosa', price: '120/-' },
+    ],
+  },
+  {
+    id: 'burgers',
+    title: 'Burgers',
+    items: [
+      { id: 'burgers-veg', name: 'Veg Burger', price: '60/-' },
+      { id: 'burgers-cheese', name: 'Cheese Burger', price: '80/-' },
+    ],
+  },
+  {
+    id: 'shakes',
+    title: 'Shakes & Cold Drinks',
+    items: [
+      { id: 'shakes-chocolate', name: 'Chocolate Shake', price: '60/-' },
+      { id: 'shakes-oreo', name: 'Oreo Shake', price: '75/-' },
+      { id: 'shakes-nimbu-pani', name: 'Nimbu Pani', price: '30/-' },
+      { id: 'shakes-aam-panna', name: 'Aam Panna', price: '30/-' },
+      { id: 'shakes-masala-colddrink', name: 'Masala Colddrink', price: '50/-' },
+    ],
+  },
+];

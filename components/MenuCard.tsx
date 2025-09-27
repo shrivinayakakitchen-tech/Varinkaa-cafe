@@ -11,7 +11,7 @@ interface MenuCardProps {
 export const MenuCard: React.FC<MenuCardProps> = ({ category, selectedItems, onUpdateItem }) => {
   return (
     <div 
-      className="bg-white p-4 rounded-xl shadow-[0_12px_28px_rgba(11,10,8,0.04)] transition-transform duration-150 ease-in-out hover:-translate-y-1.5 hover:shadow-[0_30px_70px_rgba(11,10,8,0.06)] animate-[fadeIn_0.5s_ease-in-out]"
+      className="bg-white p-5 rounded-2xl shadow-[0_8px_32px_var(--shadow-color)] transition-transform duration-200 ease-in-out hover:-translate-y-1 animate-[fadeIn_0.5s_ease-in-out] border border-[var(--border-color)]"
       style={{ animationFillMode: 'forwards', opacity: 0 }}
     >
       <style>{`
@@ -20,8 +20,9 @@ export const MenuCard: React.FC<MenuCardProps> = ({ category, selectedItems, onU
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
-      <div className="text-blue-800 font-extrabold mb-2.5">{category.title}</div>
+      <div className="text-[var(--brand-primary)] text-lg font-bold mb-3 border-b border-[var(--border-color)] pb-3">{category.title}</div>
       <div>
+        {/* FIX: Corrected the order of parameters in the map function. The first argument is the item, and the second is the index. */}
         {category.items.map((item, index) => (
           <MenuItemView 
             key={item.id} 

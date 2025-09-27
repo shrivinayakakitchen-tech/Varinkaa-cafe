@@ -1,6 +1,6 @@
-# Shri Vinayaka Kitchen - Digital Menu
+# Varnikaa cafe - Digital Menu
 
-Welcome to the official repository for the Shri Vinayaka Kitchen's interactive digital menu. This web application provides a clean, modern, and easy-to-use interface for customers to browse the delicious, home-cooked vegetarian meals available.
+Welcome to the official repository for the Varnikaa cafe's interactive digital menu. This web application provides a clean, modern, and easy-to-use interface for customers to browse the delicious, home-cooked vegetarian meals available.
 
 ## 📜 Description
 

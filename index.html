@@ -3,19 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shri Vinayaka Kitchen — Menu</title>
+  <title>Varnikaa cafe — Menu</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --bg-primary: #f8f9fa; /* Very light grey, almost white */
+      --bg-secondary: #ffffff;
+      --text-primary: #212529; /* Dark charcoal */
+      --text-secondary: #495057; /* Mid grey */
+      --brand-primary: #005f73; /* Deep teal/blue */
+      --brand-secondary: #0a9396; /* Lighter teal */
+      --accent-primary: #3a86ff; /* Vibrant blue for actions */
+      --accent-cta: #f77f00; /* Warm orange for CTA */
+      --accent-cta-hover: #e07200; /* Darker orange for hover */
+      --border-color: #dee2e6;
+      --shadow-color: rgba(0, 95, 115, 0.1);
+    }
     body {
-      background-color: #e0f2fe; /* light sky blue */
-      color: #1e293b; /* slate-800 */
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
       font-family: 'Inter', sans-serif;
+      background-image:
+        radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.04) 1px, transparent 0);
+      background-size: 20px 20px;
     }
     .font-playfair {
       font-family: 'Playfair Display', serif;
+    }
+    @keyframes cart-bounce {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(0.9); }
+      50% { transform: scale(1.1); }
+      75% { transform: scale(0.95); }
+    }
+    .cart-animate {
+      animation: cart-bounce 0.5s ease-in-out;
+    }
+    @keyframes confirm-pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .animate-confirm {
+      animation: confirm-pulse 0.4s ease-out forwards;
     }
   </style>
 <script type="importmap">
@@ -23,7 +56,8 @@
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.1.1",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/"
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
   }
 }
 </script>

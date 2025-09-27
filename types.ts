@@ -20,3 +20,8 @@ export type SelectedItem = {
   item: MenuItem;
   quantity: number;
 };
+
+export interface AiRecommendation {
+  id: string;
+  reason: string;
+}

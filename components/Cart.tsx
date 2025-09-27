@@ -64,8 +64,12 @@ export const Cart: React.FC<CartProps> = ({ isOpen, onClose, selectedItems, onUp
             </div>
           ) : (
             <ul className="divide-y divide-[var(--border-color)]">
-              {orderItems.map(({ item, quantity }) => (
-                <li key={item.id} className="flex items-center gap-4 py-4">
+              {orderItems.map(({ item, quantity }, index) => (
+                <li 
+                  key={item.id} 
+                  className="flex items-center gap-4 py-4"
+                  style={{ animation: `cart-item-in 0.4s ease-out ${index * 75}ms backwards` }}
+                >
                   <div className="flex-1">
                     <p className="font-bold text-[var(--text-primary)]">{item.name}</p>
                     <p className="text-sm text-[var(--text-secondary)]">{item.price}</p>

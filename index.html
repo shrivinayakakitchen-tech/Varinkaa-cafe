@@ -50,6 +50,16 @@
     .animate-confirm {
       animation: confirm-pulse 0.4s ease-out forwards;
     }
+    @keyframes cart-item-in {
+      from {
+        opacity: 0;
+        transform: translateX(1rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   </style>
 <script type="importmap">
 {
